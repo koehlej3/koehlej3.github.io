@@ -1,23 +1,70 @@
 html {
   background-color: rgb(231, 215, 184);
   font-size: 20px;
+  margin-top:0;
+  padding-top:0;
+}
+:root{
+  overscroll-behavior: none;
+}
+body {
+  margin:0;
+  padding:0;
+}
+
+header {
+  margin:0;
+  padding:0;
+  background-color: rgb(62, 29, 0);
 }
 
 .top-navigation {
-  background-color: rgb(62, 29, 0);
   h1 {
-    color: rgb(231, 215, 184);
+    color: rgb(231, 215, 184); 
+    padding-left: 0.5em;
+    padding-top:0;
+    margin-top:0;
+    margin-bottom:0;
   }
   font-size: 30px;
-  text-align: center;
-  border: 10px solid black;
+  text-align: left;
+  padding-bottom: 1%;
+  
 }
 
-ul {
-  background: rgb(255, 255, 255);
-  padding: 10px;
-  border: 1px solid black;
+
+.site {
+  min-height:100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: minmax(0, 1fr);
 }
+.site_header {
+  position: sticky;
+  top: 0;
+  padding: 0;
+
+}
+.flex {
+  display: flex;
+  color: rgb(231,215,184);
+  color: rgb(231,215,184);
+}
+
+.nav-link {
+  color: rgb(231,215,184);
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 2em;
+  text-align: right;
+}
+
+.text-box {
+  border: 10px rgb(62, 29, 0);
+  padding: 30px;
+}
+
+
 
 .button {
   background-color: rgb(62,29,0);
@@ -35,6 +82,12 @@ ul {
 }
 .button:active {
   transform: scale(0.98);
+}
+
+ul {
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  border: 1px solid black;
 }
 
 li {
